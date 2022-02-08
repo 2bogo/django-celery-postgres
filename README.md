@@ -8,7 +8,7 @@
 
 > Deploy web application using Django, Postgres, redis, Nginx and Kubernetes.
 
-##Getting Started
+## Getting Started
 ```
 docker-compose up --build
 ```
