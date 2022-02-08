@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  {% include 'head.html' %}
+  <body>
+    <div class="container"><br /></div>
+    <main class="container">
+      <div class="bg-light p-5 rounded">
+        <h1>Celery task test</h1>
+        <p class="lead">
+          When two numbers are entered, the sum of the numbers is displayed as
+          the result.
+        </p>
+
+        <div>
+          <form class="d-flex" action="." method="post">
+            {% csrf_token %}
+            <input class="form-control me-2" type="text" placeholder="1,2" name="q" />
+            <button class="btn btn-secondary" type="submit">ADD</button>
+          </form>
+        </div>
+
+        <p style="margin-top: 2rem; text-align: center;">
+          The sum of the two numbers is <span style="font-weight: bold;">{{sum_value}}</span>.
+        </p>
+      </div>
+    </main>
+  </body>
+</html>
