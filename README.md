@@ -6,7 +6,7 @@
   </a>
 </p>
 
-> Deploy web application using Django, Postgres, redis, Nginx and Kubernetes.
+> Deploy web application using Django, Postgres, Redis, Nginx and Kubernetes.
 
 ## Getting Started
 ```

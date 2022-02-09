@@ -11,7 +11,7 @@ RUN apk add --update --no-cache --virtual .tmp-build-deps \
     gcc libc-dev linux-headers postgresql-dev musl-dev zlib zlib-dev
 
 RUN pip install -r requirements.txt
-RUN pip install psycopg2-binary 
+RUN pip install psycopg2-binary
 RUN apk del .tmp-build-deps
 
 RUN python manage.py collectstatic --no-input
