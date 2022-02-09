@@ -44,3 +44,15 @@ services:
       - db
       - redis
       - app
+
+  nginx:
+    image: nginx:latest
+    restart: always
+    volumes:
+      - ./config/app.conf:/etc/nginx/conf.d/app.conf
+      - ./src/static/:/static
+    ports:
+      - "80:80"
+
+    depends_on:
+      - app
